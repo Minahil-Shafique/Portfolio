@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="./styles/transition.css" />
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/934416620f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header id="">
+      <nav>
+        <div class="right bold"><a class="light">M</a> i n a h i l .</div>
+        <!-- <div class="left"> -->
+        <ul id="sidemenu">
+          <li><a href="#firstSection">Home</a></li>
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark light fas" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars light fas" onclick="openmenu()"></i>
+        <!-- </div> -->
+      </nav>
+    </header>
+
+    <main>
+      <section id="firstSection">
+        <div class="leftSection">
+          Hi, I am Minahil.<br />A passionate<br />
+          <a class="type">MERN Stack Developer. </a>
+        </div>
+        <div class="rightSection">
+          <img src="./images/mern-logo.png" alt="" class="mern" />
+        </div>
+      </section>
+
+      <!-- ABOUT Me-->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./images/porfolio.png" alt="me" />
+            </div>
+            <div class="about-col-2">
+              <h2 class="bold">ABOUT ME</h2>
+              <div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero laborum dolorum rem cupiditate totam consequatur atque
+                  omnis consequuntur ab quia. Eius quasi modi, consequuntur
+                  architecto unde numquam maxime nisi nemo!
+                </p>
+              </div>
+
+              <div class="tab-titles">
+                <div class="tab-links active-link" onclick="opentab('Skills')">
+                  Skills
+                </div>
+                <div class="tab-links" onclick="opentab('Experience')">
+                  Experience
+                </div>
+                <div class="tab-links" onclick="opentab('Education')">
+                  Education
+                </div>
+              </div>
+
+              <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                  <li><span>HTML, CSS and JS</span><br /></li>
+                  <li><span>CSS Framework</span><br />Bootstrap</li>
+                  <li><span>JS Framework</span><br />React JS</li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="Experience">
+                <ul>
+                  <li><span>2022-23</span> <br /></li>
+                  <li><span>2023-24</span> <br /></li>
+                  <li><span>2024-25</span> <br /></li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="Education">
+                <ul>
+                  <li><span>University</span><br />...</li>
+                  <li>
+                    <span>College</span><br />...<br />
+                    <a class="height light">Branch: Computer Science</a>
+                  </li>
+                  <li><span>School</span><br />...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------- Portfolio -------- -->
+      <div id="portfolio padding">
+        <div class="container">
+          <div class="sub-title"><h1>My Work</h1></div>
+          <div class="work-list">
+            <div class="work padding">
+              <img src="./images/clone.png" alt="work" />
+              <div class="layer">
+                <h3>Clone Websites</h3>
+                <p></p>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="work padding">
+              <img src="./images/phone.png" alt="work" />
+              <div class="layer">
+                <h3>xyz</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore laudantium neque, magnam, omnis repellendus veniam unde
+                  eveniet distinctio aliquid quis molestiae ratione quam
+                  suscipit rerum eos velit iure eligendi totam?
+                </p>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="work padding">
+              <img src="./images/cart.png" alt="work" />
+              <div class="layer">
+                <h3>groscery store</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate quos incidunt odit voluptates, omnis minus
+                  voluptate rerum commodi illo ex eaque voluptatibus quisquam ut
+                  sequi maiores et laudantium ab eveniet.
+                </p>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------SERVICES-------- -->
+      <section id="services">
+        <div class="container">
+          <h2 class="bold sub-title">My Services</h2>
+          <div class="services-list">
+            <div>
+              <i class="fas fa-code large"></i>
+              <h2 class="padding">Wed Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                consectetur deserunt exercitationem omnis dolores? Doloremque
+                facere, rem cum odit ab at neque. Quaerat, maiores laborum?
+                Veniam nam eligendi veritatis consectetur!
+              </p>
+              <a href="#" class="light">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-crop-simple large"></i>
+              <h2 class="padding">UI/UX Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                consectetur deserunt exercitationem omnis dolores? Doloremque
+                facere, rem cum odit ab at neque. Quaerat, maiores laborum?
+                Veniam nam eligendi veritatis consectetur!
+              </p>
+              <a href="#" class="light">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-app-store large"></i>
+              <h2 class="padding">App Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                consectetur deserunt exercitationem omnis dolores? Doloremque
+                facere, rem cum odit ab at neque. Quaerat, maiores laborum?
+                Veniam nam eligendi veritatis consectetur!
+              </p>
+              <a href="#" class="light">Learn more</a>
+            </div>
+          </div>
+          <a href="" class="btn">See More</a>
+        </div>
+      </section>
+
+      <!-- -------- About -------- -->
+      <div id="contact">
+        <div class="container">
+          <h2 class="sub-title">Contact Me</h2>
+          <div class="row">
+            <div class="contact-left">
+              <p>
+                <i class="fa-solid fa-paper-plane"></i
+                >xyz@gmail.com
+              </p>
+              <div class="social-icons">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-square-github"></i></a>
+              </div>
+              <a href="" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+              <form>
+                <input type="text" name="Name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea
+                  rows="6"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+                <button type="submit" class="btn submit bold">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
