@@ -6,6 +6,7 @@
     <title>Developer Portfolio</title>
     <link rel="stylesheet" href="./styles/transition.css" />
     <link rel="stylesheet" href="./styles/utility.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +17,8 @@
       src="https://kit.fontawesome.com/934416620f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
   </head>
   <body>
@@ -27,7 +30,7 @@
           <li><a href="#firstSection">Home</a></li>
           <li><a href="#about">About</a></li>
 
-          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <i class="fa-solid fa-xmark light fas" onclick="closemenu()"></i>
         </ul>
@@ -58,157 +61,121 @@
               <h2 class="bold">ABOUT ME</h2>
               <div>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Libero laborum dolorum rem cupiditate totam consequatur atque
-                  omnis consequuntur ab quia. Eius quasi modi, consequuntur
-                  architecto unde numquam maxime nisi nemo!
+                  I am specialized in HTML5, CSS3, and JavaScript  (including React, Bootstrap, and jQuery) for creating responsive and dynamic web applications. Proficient in backend technologies like Node.js and MongoDB, I've completed a number of projects, showcasing my commitment to clean code and user-centric design. Currently seeking opportunities to contribute my skills and collaborate on innovative projects.
                 </p>
               </div>
 
               <div class="tab-titles">
-                <div class="tab-links active-link" onclick="opentab('Skills')">
+                <div class="tab-links active-tab" onclick="opentab('Skills')">
                   Skills
                 </div>
-                <div class="tab-links" onclick="opentab('Experience')">
-                  Experience
-                </div>
-                <div class="tab-links" onclick="opentab('Education')">
-                  Education
-                </div>
               </div>
 
-              <div class="tab-contents active-tab" id="Skills">
+              <div class="tab-contents " id="Skills">
                 <ul>
-                  <li><span>HTML, CSS and JS</span><br /></li>
-                  <li><span>CSS Framework</span><br />Bootstrap</li>
-                  <li><span>JS Framework</span><br />React JS</li>
-                </ul>
-              </div>
-
-              <div class="tab-contents" id="Experience">
-                <ul>
-                  <li><span>2022-23</span> <br /></li>
-                  <li><span>2023-24</span> <br /></li>
-                  <li><span>2024-25</span> <br /></li>
-                </ul>
-              </div>
-
-              <div class="tab-contents" id="Education">
-                <ul>
-                  <li><span>University</span><br />...</li>
-                  <li>
-                    <span>College</span><br />...<br />
-                    <a class="height light">Branch: Computer Science</a>
+                  <li className='item'>
+                    <p>Front-End</p>
+                    <span>
+                    HTML, CSS, JS, Bootstrap, JQuery, ReactJS, Redux, MaterialUI
+                    </span>
+                    <p>Back-End</p>
+                    <span>
+                     NodeJS, Express, MongoDB, Mongoose
+                    </span>
+                    <p>Languages</p>
+                    <span>
+                      C, JavaScript
+                    </span>
                   </li>
-                  <li><span>School</span><br />...</li>
                 </ul>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!---------- Portfolio -------- -->
-      <div id="portfolio padding">
-        <div class="container">
-          <div class="sub-title"><h1>My Work</h1></div>
-          <div class="work-list">
-            <div class="work padding">
-              <img src="./images/clone.png" alt="work" />
-              <div class="layer">
-                <h3>Clone Websites</h3>
-                <p></p>
-                <a href=""><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div class="work padding">
-              <img src="./images/phone.png" alt="work" />
-              <div class="layer">
-                <h3>xyz</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolore laudantium neque, magnam, omnis repellendus veniam unde
-                  eveniet distinctio aliquid quis molestiae ratione quam
-                  suscipit rerum eos velit iure eligendi totam?
-                </p>
-                <a href=""><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div class="work padding">
-              <img src="./images/cart.png" alt="work" />
-              <div class="layer">
-                <h3>groscery store</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cupiditate quos incidunt odit voluptates, omnis minus
-                  voluptate rerum commodi illo ex eaque voluptatibus quisquam ut
-                  sequi maiores et laudantium ab eveniet.
-                </p>
-                <a href=""><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   
 
-      <!----------SERVICES-------- -->
-      <section id="services">
-        <div class="container">
-          <h2 class="bold sub-title">My Services</h2>
-          <div class="services-list">
-            <div>
-              <i class="fas fa-code large"></i>
-              <h2 class="padding">Wed Design</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                consectetur deserunt exercitationem omnis dolores? Doloremque
-                facere, rem cum odit ab at neque. Quaerat, maiores laborum?
-                Veniam nam eligendi veritatis consectetur!
-              </p>
-              <a href="#" class="light">Learn more</a>
-            </div>
-            <div>
-              <i class="fa-solid fa-crop-simple large"></i>
-              <h2 class="padding">UI/UX Design</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                consectetur deserunt exercitationem omnis dolores? Doloremque
-                facere, rem cum odit ab at neque. Quaerat, maiores laborum?
-                Veniam nam eligendi veritatis consectetur!
-              </p>
-              <a href="#" class="light">Learn more</a>
-            </div>
-            <div>
-              <i class="fa-brands fa-app-store large"></i>
-              <h2 class="padding">App Design</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                consectetur deserunt exercitationem omnis dolores? Doloremque
-                facere, rem cum odit ab at neque. Quaerat, maiores laborum?
-                Veniam nam eligendi veritatis consectetur!
-              </p>
-              <a href="#" class="light">Learn more</a>
-            </div>
+      <!----------projects-------- -->
+ 
+      <h2 class="bold sub-title">Projects</h2>
+      <section id="projects" class="projects-list">
+         
+        <div class="projectItem">
+          <img src="./images//todo.jpg" alt="...">
+          <div class="card-content">
+            <p class="card-text">
+              <h2 class="projectTitle">To-do List</h2>
+              <a href="https://github.com/Minahil-Shafique/To-do-list "><i class="fa-brands fa-square-github icon"></i></a>
+            </p>
           </div>
-          <a href="" class="btn">See More</a>
         </div>
+        <div class="projectItem">
+          <img src="./images/candy-crush.jpg" alt="...">
+          <div class="card-content">
+            <p class="card-text">
+              <h2 class=" projectTitle">Candy Crush</h2>
+              <a href="https://github.com/Minahil-Shafique/Candy-Crush "><i class="fa-brands fa-square-github icon"></i></a>
+            </p>
+          </div>
+        </div>
+       
+        <div class="projectItem">
+          <img src="./images/quiz.jpg"  alt="...">
+          <div class="card-content">
+            <p class="card-text"> 
+              <h2 class="projectTitle">Quiz App</h2>
+              <a href="https://github.com/Minahil-Shafique/Quiz-App"><i class="fa-brands fa-square-github icon"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="projectItem">
+          <img src="./images/tictactoe.jpg" alt="...">
+          <div class="card-content">
+            <p class="card-text">
+              <h2 class="projectTitle">Tic tac Toe</h2>
+              <a href="https://github.com/Minahil-Shafique/Tic-tac-toe"><i class="fa-brands fa-square-github icon"></i></a>
+            </p>
+          </div>
+        </div>
+       
+        <div class="projectItem">
+          <img src="./images/Weather-cloud.jpg" alt="...">
+          <div class="card-content">
+            <p class="card-text">
+              <h2 class="projectTitle">Weather App</h2>
+              <a href="https://github.com/Minahil-Shafique/Weather-App  "><i class="fa-brands fa-square-github icon"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="projectItem">
+          <img src="./images/ecommerce.jpg" alt="...">
+          <div class="card-content">
+            <p class="card-text">
+              <h2 class="projectTitle">Ecommerce</h2>
+              <a href="https://github.com/Minahil-Shafique/Ecommerce"><i class="fa-brands fa-square-github icon"></i></a>
+            </p>
+          </div>
+        </div>
+
       </section>
+
 
       <!-- -------- About -------- -->
       <div id="contact">
         <div class="container">
-          <h2 class="sub-title">Contact Me</h2>
+          <h2 class="sub-title">Contact Information</h2>
           <div class="row">
             <div class="contact-left">
               <p>
-                <i class="fa-solid fa-paper-plane"></i
-                >xyz@gmail.com
+                <a href="https://minahilshafique644"><i class="fa-solid fa-paper-plane"></i></a>
+                minahilshafique644@gmail.com
               </p>
               <div class="social-icons">
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/minahil-shafique/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Minahil-Shafique"><i class="fa-brands fa-square-github"></i></a>
               </div>
-              <a href="" class="btn btn2">Download Resume</a>
+              <a href="./images/Resume.pdf" download="" class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
               <form>
