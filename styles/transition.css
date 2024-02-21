@@ -144,8 +144,14 @@ nav ul li a:hover::after {
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  background-color: #35517d;
+  padding: 5px 12px;
+  border-radius: 5px;
 }
-
+.tab-links:hover{
+  background-color: #4468a2;
+  transform: translateY(-2px);
+}
 .tab-links::after {
   content: " ";
   width: 0;
@@ -159,21 +165,17 @@ nav ul li a:hover::after {
 .tab-links.active-link::after {
   width: 50%;
 }
-
 .tab-contents ul li {
   list-style: none;
   margin-left: 0%;
 }
-
 .tab-contents ul li span {
   color: #6aa2fd;
   font-size: 14px;
 }
-
 .tab-contents {
   display: none;
 }
-
 .tab-contents.active-tab {
   display: block;
 }
