@@ -20,6 +20,8 @@ function openmenu() {
 function closemenu() {
   sidemenu.style.right = "-200px";
 }
-function openImage() {
-  
-}
+var position = document.documentElement;
+position.addEventListener("mousemove", (e) => {
+  position.style.setProperty("--x", e.clientX + "px");
+  position.style.setProperty("--y", e.clientY + "px");
+});

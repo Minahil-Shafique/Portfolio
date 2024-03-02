@@ -54,7 +54,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  /* color: #99c4fc; */
   font-size: 1.02rem;
   cursor: grab;
 }
@@ -88,7 +87,7 @@ nav ul li a:hover::after {
   position: absolute;
   right: 0;
   color: #99c4fc;
-  background-color: #0c2245;
+  background-color: #11213e;
   width: 100%;
   animation: typing 3s alternate infinite;
 }

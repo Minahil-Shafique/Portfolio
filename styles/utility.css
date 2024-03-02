@@ -5,8 +5,17 @@
 }
 body {
   font-family: poppins;
-  background-color: #0c2245;
+  background-color: #102952;
   color: #faf0e4;
+}
+.high-light{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0, 0, 0, 0.263) 20%);
 }
 /* Untility  */
 .bold {
